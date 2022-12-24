@@ -1,0 +1,8 @@
+{
+  "country": "RO",
+  "channels": [{
+    "title": "Euronews",
+    "key_stream": "https://www.hlsrundle-stream-iptv.gq/api/hls/euronews.m3u8",
+    "type": "hls"
+  }]
+}
