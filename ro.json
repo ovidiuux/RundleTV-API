@@ -15,7 +15,7 @@
         "type": "hls"
     },
     {
-        "title": "RomaniaTV",
+        "title": "Romania TV",
         "key_stream": "https://www.hlsrundle-stream-iptv.gq/api/hls/romaniatv.m3u8",
         "type": "hls"
     },
