@@ -1,5 +1,10 @@
 [
     {
+        "title": "Antena 1",
+        "key_stream": "https://www.hlsrundle-stream-iptv.gq/api/hls/antena1.m3u8",
+        "type": "hls"
+    },
+    {
         "title": "Antena 3",
         "key_stream": "https://www.hlsrundle-stream-iptv.gq/api/hls/antena3.m3u8",
         "type": "hls"
@@ -15,15 +20,15 @@
         "type": "hls"
     },
     {
+        "title": "MoozRo",
+        "key_stream": "https://www.hlsrundle-stream-iptv.gq/api/hls/moozro.m3u8",
+        "type": "hls"
+    },
+    {
         "title": "Romania TV",
         "key_stream": "https://www.hlsrundle-stream-iptv.gq/api/hls/romaniatv.m3u8",
         "type": "hls"
     },
-    {
-        "title": "ZU TV",
-        "key_stream": "https://www.hlsrundle-stream-iptv.gq/api/hls/zutv.m3u8",
-        "type": "hls"
-    }, 
     {
         "title": "Trinitas TV",
         "key_stream": "https://www.hlsrundle-stream-iptv.gq/api/hls/trinitastv.m3u8",
@@ -33,5 +38,10 @@
         "title": "Speranta TV",
         "key_stream": "https://www.hlsrundle-stream-iptv.gq/api/hls/sperantatv.m3u8",
         "type": "hls"
-    }
+    },
+    {
+        "title": "ZU TV",
+        "key_stream": "https://www.hlsrundle-stream-iptv.gq/api/hls/zutv.m3u8",
+        "type": "hls"
+    }, 
 ]
