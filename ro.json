@@ -43,5 +43,5 @@
         "title": "ZU TV",
         "key_stream": "https://www.hlsrundle-stream-iptv.gq/api/hls/zutv.m3u8",
         "type": "hls"
-    }, 
+    }
 ]
