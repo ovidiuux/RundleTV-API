@@ -28,5 +28,10 @@
         "title": "Trinitas TV",
         "key_stream": "https://www.hlsrundle-stream-iptv.gq/api/hls/trinitastv.m3u8",
         "type": "hls"
+    },
+    {
+        "title": "Speranta TV",
+        "key_stream": "https://www.hlsrundle-stream-iptv.gq/api/hls/sperantatv.m3u8",
+        "type": "hls"
     }
 ]
