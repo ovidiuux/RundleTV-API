@@ -1,14 +1,27 @@
-{
-  "country": "RO",
-  "channels": [{
-    "title": "Euronews",
-    "key_stream": "https://www.hlsrundle-stream-iptv.gq/api/hls/euronews.m3u8",
-    "type": "hls"
-  },
+[
     {
-    "title": "ZU TV",
-    "key_stream": "https://www.hlsrundle-stream-iptv.gq/api/hls/zutv.m3u8",
-    "type": "hls"
-  },
-   ]
-}
+        "title": "Antena 3",
+        "key_stream": "https://www.hlsrundle-stream-iptv.gq/api/hls/antena3.m3u8",
+        "type": "hls"
+    },
+    {
+        "title": "B1",
+        "key_stream": "https://www.hlsrundle-stream-iptv.gq/api/hls/b1.m3u8",
+        "type": "hls"
+    },
+    {
+        "title": "Euronews",
+        "key_stream": "https://www.hlsrundle-stream-iptv.gq/api/hls/euronews.m3u8",
+        "type": "hls"
+    },
+    {
+        "title": "RomaniaTV",
+        "key_stream": "https://www.hlsrundle-stream-iptv.gq/api/hls/romaniatv.m3u8",
+        "type": "hls"
+    },
+    {
+        "title": "ZU TV",
+        "key_stream": "https://www.hlsrundle-stream-iptv.gq/api/hls/zutv.m3u8",
+        "type": "hls"
+    }
+]
