@@ -4,4 +4,5 @@ Am nevoie de susținere și pentru a susține server-ul în viață, îmi puteț
 
 Cum vizionezi direct din browser?
 https://rundle-live.vercel.app/ID_LIVE, exemplu: https://rundle-live.vercel.app/live/antena1
+
 API: https://www.hlsrundle-stream-iptv.gq/api/ro.json
