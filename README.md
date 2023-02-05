@@ -1,7 +1,4 @@
-# RundleTV - conținut găzduit
-Gratuit, pentru a suștine acest proiect puteți dona prin [PayPal.me](https://paypal.me/ovidiucapraru).
-
-Rundle TV - Documentație API.
+# Rundle TV - Documentație API.
 https://user-emea-api.rundletv.eu.org/
 
 Salutări! 👋
