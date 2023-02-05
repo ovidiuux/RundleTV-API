@@ -10,7 +10,7 @@ Pentru a începe să foloseși API nostru ai nevoie de o cheie API la care o po�
 Hai, să începem autentificarea! Ai nevoie de chiea API și cheia secretă 🤫. Fiecare cheie este unică și este ca un ID pentru tine.
 Este securizat prin jetoane (token-uri) și acestea expiră după un anumit interval și se pot folosi pentru a te putea autentifica la Rundle API.
 
-Fiecare cheie API este în baza adresei URL, de exemplu: https://user-emea-api.rundletv.eu.org/da2c83a3cf655338929fb8522e329d95
+Fiecare cheie API este în baza adresei URL, de exemplu: https://user-emea-api.rundletv.eu.org/content/da2c83a3cf655338929fb8522e329d95
 Și este autentificarea principală, este sigur să o folosești oriunde.
 
 Atenție, aici trebuie să fie undeva pe un server, nu în baza aplicației, aici se trimite cheia secretă 🤫
@@ -22,7 +22,7 @@ Originea și referrer-ul pe care le-ai primit pe email de la api@rundletv.eu.org
 Exemplu, în PHP:
 
 		<?php
-		$url = "https://user-emea-api.rundletv.eu.org/da2c83a3cf655338929fb8522e329d95";
+		$url = "https://user-emea-api.rundletv.eu.org/content/da2c83a3cf655338929fb8522e329d95/token";
 
 		$curl = curl_init($url);
 		curl_setopt($curl, CURLOPT_URL, $url);
