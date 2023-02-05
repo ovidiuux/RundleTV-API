@@ -19,26 +19,26 @@ Originea și referrer-ul pe care le-ai primit pe email de la api@rundletv.eu.org
 Și bineînțeles cheia secretă.
 
 Exemplu, în PHP:
-<?php
 
-$url = "https://user-emea-api.rundletv.eu.org/da2c83a3cf655338929fb8522e329d95";
+		<?php
+		$url = "https://user-emea-api.rundletv.eu.org/da2c83a3cf655338929fb8522e329d95";
 
-$curl = curl_init($url);
-curl_setopt($curl, CURLOPT_URL, $url);
-curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+		$curl = curl_init($url);
+		curl_setopt($curl, CURLOPT_URL, $url);
+		curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 
-$headers = array(
-   "rundle-secret: "d224bc5228293d4464d6ec76a13b6a4f163d0be7",
-   "origin": "https://site-ul-meu.ro",
-   "referrer": "https://site-ul-meu.ro/"
-);
-curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
+		$headers = array(
+		   "rundle-secret: "d224bc5228293d4464d6ec76a13b6a4f163d0be7",
+		   "origin": "https://site-ul-meu.ro",
+		   "referrer": "https://site-ul-meu.ro/"
+		);
+		curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
 
-$resp = curl_exec($curl);
-curl_close($curl);
-echo json_encode($resp);
+		$resp = curl_exec($curl);
+		curl_close($curl);
+		echo json_encode($resp);
 
-?>
+		?>
 
 
 Exemplu, în Node.Js (cu Express.js)
@@ -58,6 +58,5 @@ Exemplu, în Node.Js (cu Express.js)
 
 	     const responseAPI = await rundleAPI.json();
 	     console.log(responseAPI);
-     res.send(responseAPI.token);
-
-}
+     	     res.send(responseAPI.token);
+     }
