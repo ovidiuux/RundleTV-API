@@ -45,7 +45,7 @@ Exemplu, în PHP:
 Exemplu, în Node.Js (cu Express.js)
 
     app.get(async (req, res) => {
-     	const base = "https://user-emea-api.rundletv.eu.org/";
+    	const base = "https://user-emea-api.rundletv.eu.org/";
 	const api_key = "da2c83a3cf655338929fb8522e329d95";
 	const secret_key = "d224bc5228293d4464d6ec76a13b6a4f163d0be7";
 
