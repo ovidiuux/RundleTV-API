@@ -6,6 +6,7 @@ https://user-emea-api.rundletv.eu.org/
 
 Salutări! 👋
 Pentru a începe să foloseși API nostru ai nevoie de o cheie API la care o poți obține prin contanct la api@rundletv.eu.org
+
 Hai, să începem autentificarea! Ai nevoie de chiea API și cheia secretă 🤫. Fiecare cheie este unică și este ca un ID pentru tine.
 Este securizat prin jetoane (token-uri) și acestea expiră după un anumit interval și se pot folosi pentru a te putea autentifica la Rundle API.
 
