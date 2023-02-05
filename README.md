@@ -45,19 +45,19 @@ Exemplu, în PHP:
 Exemplu, în Node.Js (cu Express.js)
 
      app.get(async (req, res) => {
-	     const base = "https://user-emea-api.rundletv.eu.org/";
-	     const api_key = "da2c83a3cf655338929fb8522e329d95";
-	     const secret_key = "d224bc5228293d4464d6ec76a13b6a4f163d0be7";
+     	const base = "https://user-emea-api.rundletv.eu.org/";
+	const api_key = "da2c83a3cf655338929fb8522e329d95";
+	const secret_key = "d224bc5228293d4464d6ec76a13b6a4f163d0be7";
 
-	     const rundleAPI = await fetch(base + api_key + "/token", {
+	const rundleAPI = await fetch(base + api_key + "/token", {
 	     headers: {
 		"rundle-secret: secret_key,
 		"origin": "https://site-ul-meu.ro",
 		"referrer": "https://site-ul-meu.ro/"
 	     }
-	     });
+	});
 
-	     const responseAPI = await rundleAPI.json();
-	     console.log(responseAPI);
-     	     res.send(responseAPI.token);
+	const responseAPI = await rundleAPI.json();
+	console.log(responseAPI);
+     	res.send(responseAPI.token);
      }
