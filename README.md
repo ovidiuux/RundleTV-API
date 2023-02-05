@@ -10,7 +10,7 @@ Este securizat prin jetoane (token-uri) și acestea expiră după un anumit inte
 Fiecare cheie API este în baza adresei URL, de exemplu: https://user-emea-api.rundletv.eu.org/content/da2c83a3cf655338929fb8522e329d95
 Și este autentificarea principală, este sigur să o folosești oriunde.
 
-Atenție, aici trebuie să fie undeva pe un server, nu în baza aplicației, aici se trimite cheia secretă 🤫
+Atenție, aici trebuie să fie undeva pe un server, nu în baza aplicației, aici vei trimite cheia secretă
 Pentru a începe să obți un jeton, trebuie să trimiți o cerere GET cu anumiți parametri:
 URL: "http://user-emea-api.rundletv.eu.org/" + CHEIE_API + "/token"
 Originea și referrer-ul pe care le-ai primit pe email de la api@rundletv.eu.org.
