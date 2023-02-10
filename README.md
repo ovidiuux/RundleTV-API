@@ -10,7 +10,10 @@ Este securizat prin jetoane (token-uri) și acestea expiră după un anumit inte
 Fiecare cheie API este în baza adresei URL, de exemplu: https://user-emea-api.rundletv.eu.org/content/da2c83a3cf655338929fb8522e329d95
 Și este autentificarea principală, este sigur să o folosești oriunde.
 
-Atenție, aici trebuie să fie undeva pe un server, nu în baza aplicației, aici vei trimite cheia secretă
+Poți să te autentifici la API prin cele două metode:
+ - Rundle-Secret, este pentru uz-personal sau direct pentru propiul server.
+ - Token, pentru a putea fi folosit direct în baza aplicației.
+
 Pentru a începe să obți un jeton, trebuie să trimiți o cerere GET cu anumiți parametri:
 URL: "http://user-emea-api.rundletv.eu.org/" + CHEIE_API + "/token"
 Originea și referrer-ul pe care le-ai primit pe email de la api@rundletv.eu.org.
@@ -58,3 +61,35 @@ Exemplu, în Node.Js (cu Express.js)
 	console.log(responseAPI);
      	res.send(responseAPI.token);
      }
+
+
+După ce ai obținut token-ul pentru autentificare acesta trebuie setat în headers la "Authorization"
+
+Exemplu, în Javascript pentru autentificare: 
+
+	const TOKEN = eyJhbGciOiJIUzI1NiIsInR5cCI...XU36FnC3JfasiRpsaKXiEUTI7Vf_xe44K2Xc
+
+	fetch('https://user-emea-api.rundletv.eu.org/content/da2c83a3cf655338929fb8522e329d95/v1', {
+	  method: 'GET',
+	  headers: {
+	    'Authorization': 'Bearer ' + TOKEN
+	  }
+	})
+	.then(response => response.json())
+	.then(data => console.log(data))
+	.catch(error => console.error(error));
+	
+	
+În această secțiune favorizează după tipul de API cerut și diferă pentru fiecare utilizator.
+
+Pentru o obține posturi radio populare din România, inclusiv adresa lor de streaming, se va face prin metoda de GET cu adresa: 
+https://user-emea-api.rundletv.eu.org/content/da2c83a3cf655338929fb8522e329d95/radio
+
+Autentificare:
+- Se poate autentifica cu Rundle-Secret
+- Se poate autentifica cu token
+
+Oferă:
+- Cele mai populare posturi de radio din România
+- title, string, Titlul postului radio
+- stream, string, Adresa URL de streaming pentru postul respecitv.
